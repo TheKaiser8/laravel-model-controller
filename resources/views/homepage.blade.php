@@ -19,6 +19,14 @@
 
     <main>
         <h1 class="text-center">Homepage</h1>
+        <ul>
+            @foreach ($movies as $movie)
+            <li>
+                {{ $movie->title }}
+            </li>
+                
+            @endforeach
+        </ul>
     </main>
 
 </body>
