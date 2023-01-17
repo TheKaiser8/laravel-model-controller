@@ -10,7 +10,7 @@
         <div class="row d-flex gy-5">
             @foreach ($movies as $movie)
                 <div class="col-sm-6 col-md-4 col-lg-3">
-                    <a href="{{ route('show', $loop->index) }}" class="text-decoration-none">
+                    <a href="{{ route('show', $movie->id) }}" class="text-decoration-none">
                         <div class="card h-100">
                             <div class="card-body">
                                 <h5 class="card-title text-center fw-bold">{{ $movie->title }}</h5>

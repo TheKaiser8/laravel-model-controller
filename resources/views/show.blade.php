@@ -1,5 +1,9 @@
 @extends('layouts.main')
 
+@section('page-title')
+    Film
+@endsection
+
 @section('page-content')
     <section class="container">
         <h1 class="text-center">Film selezionato</h1>
