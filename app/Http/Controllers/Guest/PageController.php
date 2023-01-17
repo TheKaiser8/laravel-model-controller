@@ -46,7 +46,7 @@ class PageController extends Controller
 
     public function show($id)
     {
-        $movie = Movie::find($id);
+        $movie = Movie::findOrFail($id); // se non trova l'elemento restituisce una pagina di cortesia (404 not found)
 
         return view('show', compact('movie'));
     }
